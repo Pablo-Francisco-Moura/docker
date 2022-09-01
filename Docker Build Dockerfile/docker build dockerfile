@@ -3,7 +3,7 @@ Um Dockerfile é simplesmente um script de instruções baseado em texto usado p
 
 Abra um terminal e vá para o diretório com a extensão Dockerfile. Agora construa a imagem do contêiner usando o comando docker build.
 
-$ docker build -f Dockerfile -t getting-started:1.0 .
+$ sudo docker build -t getting-started:1.0 .
 
 A tag -t marca nossa imagem. -t getting-started:1.0. A opção especifica o nome (obrigatório) e a tag (opcional) da imagem que estamos construindo.
 
