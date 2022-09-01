@@ -1,0 +1,17 @@
+Crie a imagem do contêiner do aplicativo
+Um Dockerfile é simplesmente um script de instruções baseado em texto usado para criar uma imagem de contêiner.
+
+Abra um terminal e vá para o diretório com a extensão Dockerfile. Agora construa a imagem do contêiner usando o comando docker build.
+
+$ docker build -f Dockerfile -t getting-started:1.0 .
+
+A tag -t marca nossa imagem. -t getting-started:1.0. A opção especifica o nome (obrigatório) e a tag (opcional) da imagem que estamos construindo.
+
+O . no final do comando docker build informa ao Docker que ele deve procurar Dockerfile no diretório atual.
+
+Inicie um contêiner de aplicativo
+Agora que temos uma imagem, vamos executar o aplicativo. Para fazer isso, usaremos o docker run comando.
+
+Inicie seu contêiner usando o comando docker run e especifique o nome da imagem que acabamos de criar:
+
+$ docker run -p 3000:3000 getting-started:latest
